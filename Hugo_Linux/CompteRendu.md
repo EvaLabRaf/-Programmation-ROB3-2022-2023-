@@ -21,12 +21,23 @@ Vous devez fournir :
     * Un readme ou un script expliquant comment :
       * installer MySQL
       
-### <span style="color: #26B260"> sudo apt install mysql-server </span>
+<span style="color: #26B260"> sudo apt install mysql-server </span>
 
       * Importer la base de données
 
-      
-      NB : Si vous faites un readme, vous devez indiquer les commandes utilisées
+
+<span style="color: #26B260"> wget [lien] </span>
+
+<span style="color: #26B260"> unzip mysqlsampledatabase.zip</span>
+
+<span style="color: #26B260"> lancer mysql: sudo mysql </span>
+
+<span style="color: #26B260"> Je vais ensuite chercher ma base de donnée : source/home/hugo/mysqlsampledatabase.sql </span>
+
+<span style="color: #26B260"> show databases;</span>
+
+
+NB : Si vous faites un readme, vous devez indiquer les commandes utilisées
   * dump-database.sh :
     * Un script de base de sauvegarde de base de données
   * dump-database.service & dump-database.timer : 
