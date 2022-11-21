@@ -36,9 +36,18 @@ Vous devez fournir :
 
 <span style="color: #26B260"> show databases;</span>
 
-<span style="color: #26B260"> Je vais maintenant créé le script, il s'appelera scriptdata</span>
+<span style="color: #26B260"> Je vais maintenant créé le script, il s'appelera scriptdata, avant tout, 
+je vais créé un utilisateur : (mysql) CREATE USER 'hugo'@'localhost' IDENTIFIED BY '1234';. 
+Je lui accorde tout les privilege : (mysql) GRANT ALL PRIVILEGES ON * . * TO 'hugo'@'localhost'; 
+je lui permet aussi de lancer des scripts GRANT PROCESS ON *.* TO hugo@localhost; 
+et je mets a jour les privileges : (mysql) FLUSH PRIVILEGES. 
+Je permet a cette utilisateur de se connecter sans mot de passe : (mysql) alter user hugo@localhost identified with auth_socket;
+</span>
 
-<span style="color: #26B260"> gedit scriptdata.sh & </span>
+
+<span style="color: #26B260"> gedit ScriptDataBase sert a ouvrir la script pour l'éditer </span>
+
+<span style="color: #26B260">Pour controller le volume du fichier on peut utiliser: ulimit -f $((TailleEnMB*1024))</span>
 
 
 
