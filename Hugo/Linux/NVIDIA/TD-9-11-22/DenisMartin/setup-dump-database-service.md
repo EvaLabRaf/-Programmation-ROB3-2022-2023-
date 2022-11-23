@@ -1,19 +1,47 @@
 # Comment configurer le service
 
-cd /etc/systemd/system = Se déplacer dans le fichier contenant les services
+Se déplacer dans le fichier contenant les services
+```shell
+cd /etc/systemd/system
+```
+<br />
 
-sudo gedit dump-database.service = Ouvrir ou créer le service s'il n'existe pas
+Ouvrir ou créer le service s'il n'existe pas
+```shell
+sudo gedit dump-database.service
 
 sudo gedit dump-database.timer
+```
+<br />
 
-sudo systemctl daemon-reload = Detecter les nouveaux service ajouté
+Detecter les nouveaux service ajouté
+```shell
+sudo systemctl daemon-reload
+```
+<br />
 
-sudo systemctl enable dump-database.service = Lancer le service au démarrage du système 
+Lancer le service au démarrage du système 
+```shell
+sudo systemctl enable dump-database.service
 
 sudo systemctl enable dump-database.timer
+```
+<br />
 
-sudo systemctl start dump-database.service = Lancer le service
+Lancer le service
+```shell
+sudo systemctl start dump-database.service
+```
+<br />
 
-sudo systemctl status dump-database.status = Voir l'état du service
+Voir l'état du service
+```shell
+sudo systemctl status dump-database.status
+```
+<br />
 
-sudo systemctl stop dump-database.status = Arreter le service
+Arreter le service
+```shell
+sudo systemctl stop dump-database.status
+```
+<br />
