@@ -1,31 +1,89 @@
 # Comment Exploiter une base de donnée
 
-sudo apt install mysql-server = Installer mysql
+Installer mysql
 
-wget [lien] = Télécharge la base de donnée depuis internet
+```shell 
+sudo apt install mysql-server 
+```
+<br />
 
-unzip mysqlsampledatabase.zip = Décompresser de labase de donnée
+Télécharge la base de donnée depuis internet
+```shell 
+wget [lien]
+```
+<br />
 
-sudo mysql = Lancer mysql
+Décompresser de labase de donnée
+```shell 
+unzip mysqlsampledatabase.zip
+```
+<br />
 
-source/home/hugo/mysqlsampledatabase.sql = Chercher la base de donnée
+Lancer mysql
+```shell 
+sudo mysql
+```
+<br />
 
-show databases; = Montrer les différentes bases de données
+Chercher la base de donnée
+```shell 
+source/home/hugo/mysqlsampledatabase.sql
+```
+<br />
 
-CREATE USER 'hugo'@'localhost' IDENTIFIED BY '1234'; = Créer un utilisateur hugo avec le mdp 1234
+Montrer les différentes bases de données
+```shell 
+show databases; 
+```
+<br />
 
-GRANT ALL PRIVILEGES ON * . * TO 'hugo'@'localhost'; = Accorder à cette utilisateur tout les privileges sur tout les fichiers
+Créer un utilisateur hugo avec le mdp 1234
+```shell
+CREATE USER 'hugo'@'localhost' IDENTIFIED BY '1234';
+```
+<br />
 
-GRANT PROCESS ON * . * TO hugo@localhost; = Accorder à cette utilisateur le droit de lancer des scripts
+Accorder à cette utilisateur tout les privileges sur tout les fichiers
+```shell
+GRANT ALL PRIVILEGES ON * . * TO 'hugo'@'localhost';
+```
+<br />
 
-FLUSH PRIVILEGES; = Mettre a jour les privileges
+Accorder à cette utilisateur le droit de lancer des scripts
+```shell
+GRANT PROCESS ON * . * TO hugo@localhost;
+```
+<br />
 
-ALTER USER hugo@localhost IDENTIFIED WITH auth_socket; = Permettre à cette utilisateur de se connecter sans mdp
+Mettre a jour les privileges
+```shell
+FLUSH PRIVILEGES;
+```
+<br />
+
+Permettre à cette utilisateur de se connecter sans mdp
+```shell 
+ALTER USER hugo@localhost IDENTIFIED WITH auth_socket;
+```
+<br />
+
 
 # Comment créer un script
 
-gedit dump-database.sh = Ouvrir un script ou le créer s'il n'existe pas
+Ouvrir un script ou le créer s'il n'existe pas
+```shell 
+gedit dump-database.sh
+```
+<br />
 
-chmod 777 /home/hugo/ScriptDataBase.sh = Accorder tout les droits pour pouvoir créer et supprimer des fichiers
+Accorder tout les droits pour pouvoir créer et supprimer des fichiers
+```shell 
+chmod 777 /home/hugo/ScriptDataBase.sh
+```
+<br />
 
-./dump-database.service = Lancer le script
+Lancer le script
+```shell 
+./dump-database.service
+```
+<br />
