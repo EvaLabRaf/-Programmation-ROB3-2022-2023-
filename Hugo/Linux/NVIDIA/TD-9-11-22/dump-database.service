@@ -1,0 +1,10 @@
+[Unit]
+Description=Execute dump-database.sh
+
+[Service]
+Type=oneshot
+ExecStart=/home/hugo/dump-database.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
