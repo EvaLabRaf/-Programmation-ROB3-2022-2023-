@@ -1,0 +1,8 @@
+[Unit]
+Description=dump-database, save the data
+
+[Service]
+WorkingDirectory=/home/eva/sauvegarde
+User=eva
+ExecStart=/home/eva/dump-database.sh
+Type=oneshot
