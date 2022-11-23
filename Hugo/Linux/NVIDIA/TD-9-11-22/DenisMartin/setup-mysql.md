@@ -24,7 +24,8 @@ ALTER USER hugo@localhost IDENTIFIED WITH auth_socket; = Permettre à cette util
 
 # Comment créer un script
 
-gedit dump-database.sh = Créer un script
+gedit dump-database.sh = Ouvrir un script ou le créer s'il n'existe pas
 
 chmod 777 /home/hugo/ScriptDataBase.sh = Accorder tout les droits pour pouvoir créer et supprimer des fichiers
 
+./dump-database.service = Lancer le script
