@@ -1,0 +1,9 @@
+[Unit]
+Description= Run backup every 10 minutes
+
+[Timer]
+OnCalendar=*:0/10
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.targer
