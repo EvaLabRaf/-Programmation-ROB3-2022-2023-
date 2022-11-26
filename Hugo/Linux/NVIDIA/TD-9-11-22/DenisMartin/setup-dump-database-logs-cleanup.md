@@ -6,7 +6,7 @@ ulimit -f $((TailleEnMB*1024))
 ```
 <br />
 
-Supprimer toutes les lignes après la 20e (à mettre dans le script)
+Supprimer toutes les lignes après la 2016e (7j*24h*6*10min) (à mettre dans le script)
 ```shell
-echo "$(tail -20 /var/log/dump-mysql.log)" > /var/log/dump-mysql.log
+echo "$(tail -2016 /var/log/dump-mysql.log)" > /var/log/dump-mysql.log
 ```
