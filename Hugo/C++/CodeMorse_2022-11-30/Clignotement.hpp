@@ -9,7 +9,6 @@ class Clignotement   /// Definition de ma classe Clignotement
 private:
     String morse;
     int millisactuel;
-    int tempsattent;
     int etatactuel;
 
 public:
@@ -17,7 +16,6 @@ public:
     Clignotement();
     void LEDHIGH();
     void LEDLOW();
-    void tempsattente(char y);
     void clignotementmillis(String x);
     void point();
     void tiret();
