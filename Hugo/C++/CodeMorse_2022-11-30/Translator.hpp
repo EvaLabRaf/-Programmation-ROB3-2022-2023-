@@ -4,7 +4,7 @@
 
 /**
 Je vais ici créer la classe Translator qui servira a faire la traduction des mots en morse,
-ainsi que toutes les variables que la fonction va utiliser pour le faire
+ainsi que toutes les variables que la fonction va utiliser pour le faire.
 */
 
 class Translator{
